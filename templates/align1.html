@@ -1,0 +1,219 @@
+<html>
+<style>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.form-style-10{
+	width:450px;
+	padding:30px;
+	margin:40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+	padding: 30px;
+	background: #F8F8F8;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+.form-style-10 h1{
+	background: #2A88AD;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+	display: block;
+	font: 13px Arial, Helvetica, sans-serif;
+	color: #888;
+	margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 30%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+	font: normal 20px 'Bitter', serif;
+	color: #2A88AD;
+	margin-bottom: 5px;
+}
+.form-style-10 .section span {
+	background: #2A88AD;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form-style-10 input[type="button"],
+.form-style-10 input[type="submit"]{
+	background: #2A88AD;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover,
+.form-style-10 input[type="submit"]:hover{
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="form-style-10">
+<hr>
+<form action='http://localhost:9999/result' method='POST' >
+
+    <div class="section"><span>1</span>Lending Form Filling</div>
+    <div class="inner-wrap">
+          <label>1.member_id <input type="text" name="Member_id"/></label>
+		  <label>2.emp_length <input type="text" name="Emp_length"/></label>
+
+    </div>
+
+	<div class="section"><span>2</span></div>
+    <div class="inner-wrap">
+          <label>3.loan_amnt <input type="text" name="loan_amnt" /></label>
+		  <label>4.funded_amnt<input type="text" name="funded_amnt" /></label>
+		  <label>5.funded_amnt_inv<input type="text" name="funded_amnt_inv" /></label>
+		 </div>
+
+
+
+	<div class="section"><span>3</span></div>
+    <div class="inner-wrap">
+          <label>6.sub_grade <input type="text" name="sub_grade" /></label>
+		  <label>7.int_rate <input type="text" name="int_rate" /></label>
+			<label>8.annual_inc<input type="text" name="annual_inc" /></label>
+		   <label>9.dti <input type="text" name="dti" /></label>
+		  <label>10.mths_since_last_delinq <input type="text" name="mths_since_last_delinq" /></label>
+	</div>
+
+	<div class="section"><span>4</span></div>
+    <div class="inner-wrap">
+          <label>11.mths_since_last_record<input type="text" name="mths_since_last_record" /></label>
+					  <label>12.open_acc <input type="text" name="open_acc" /></label>
+		  <label>13.revol_bal<input type="text" name="revol_bal" /></label>
+		   <label>14.revol_util<input type="text" name="revol_util" /></label>
+		  <label>15.total_acc<input type="text" name="total_acc" /></label>
+	</div>
+
+
+	<div class="section"><span>5</span></div>
+    <div class="inner-wrap">
+          <label>16.total_rec_int <input type="text" name="total_rec_int" /></label>
+		  <label>17.total_rec_late_fee <input type="text" name="total_rec_late_fee" /></label>
+
+		  <label>18.mths_since_last_major_derog <input type="text" name="mths_since_last_major_derog" /></label>
+	</div>
+
+
+	<div class="section"><span>6</span></div>
+    <div class="inner-wrap">
+          <label>19.last_week_pay<input type="text" name="last_week_pay" /></label>
+		  <label>20.tot_cur_bal<input type="text" name="tot_cur_bal" /></label>
+		   <label>21.total_rev_hi_lim<input type="text" name="total_rev_hi_lim" /></label>
+		  <label>22.tot_coll_amt <input type="text" name="tot_coll_amt" /></label>
+	</div>
+
+
+<div class="section"><span>7</span></div>
+    <div class="inner-wrap">
+          <label>23.recoveries<input type="text" name="recoveries" /></label>
+		  <label>24.collection_recovery_fee<input type="text" name="collection_recovery_fee" /></label>
+		   <label>25.term<input type="text" name="term" /></label>
+		  <label>26.acc_now_delinq<input type="text" name="acc_now_delinq" /></label>
+	</div>
+
+
+
+
+
+<div class="section"><span>8</span></div>
+    <div class="inner-wrap">
+          <label>27.collections_12_mths_ex_med<input type="text" name="collections_12_mths_ex_med" /></label>
+		  <label>28.loan_to_income<input type="text" name="loan_to_income" /></label>
+		   <label>29.bad_state<input type="text" name="bad_state" /></label>
+		  <label>30.avl_lines<input type="text" name="avl_lines" /></label>
+		   <label>31.int_paid<input type="text" name="int_paid" /></label>
+		  <label>32.emi_paid_progress_perc <input type="text" name="emi_paid_progress_perc" /></label>
+			<label>33.total_repayment_progress<input type="text" name="total_repayment_progress"/></label>
+	</div>
+
+<input type="submit" value="submit"></input>
+
+
+
+
+
+</form>
+</div>
+
+</html>
